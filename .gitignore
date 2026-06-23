@@ -1,0 +1,20 @@
+# ESP-IDF outputs
+build/
+managed_components/
+sdkconfig
+sdkconfig.old
+
+# Editor/system files
+.vscode/
+.idea/
+*.swp
+*.tmp
+Thumbs.db
+Desktop.ini
+
+# Audio/debug captures
+*.wav
+*.pcm
+*.bin
+*.log
+
