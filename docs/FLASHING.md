@@ -10,13 +10,13 @@ Windows 设备管理器里应该出现类似：
 Silicon Labs CP210x USB to UART Bridge (COMx)
 ```
 
-当前这台电脑识别到的是：
+当前这台电脑识别到的 ESP32-S3 端口是：
 
 ```text
-COM3 - Silicon Labs CP210x USB to UART Bridge
+COM6 - USB 串行设备
 ```
 
-这说明开发板的 USB-UART 口已经被电脑识别。
+这说明开发板已经被电脑识别。后续烧录和串口监视先使用 `COM6`。
 
 ## 2. 两个 USB-C 口怎么选
 
@@ -53,6 +53,7 @@ GCC
 还没有检测到：
 
 ```text
+Arduino IDE
 idf.py
 esptool.py
 ```
@@ -90,4 +91,3 @@ esptool.py
 - 安装和环境配置比 Arduino IDE 稍复杂。
 
 本项目最终建议使用 ESP-IDF，但第一天可以先用 Arduino IDE 验证开发板。
-

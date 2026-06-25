@@ -9,5 +9,6 @@
 ## 2026-06-25
 
 - 硬件到手：ESP32-S3 开发板、TF 卡模块、8GB microSD 卡、INMP441 麦克风模块、OLED 屏、USB 读卡器。
-- 当前电脑识别到 `COM3 - Silicon Labs CP210x USB to UART Bridge`，说明 USB-UART 识别正常。
-- 当前电脑还未检测到 `idf.py` / `esptool.py`，下一步需要安装 ESP32-S3 烧录工具。
+- 当前电脑识别到 ESP32-S3 为 `COM6 - USB 串行设备`。
+- 当前电脑还未安装 Arduino IDE，也未检测到 `idf.py` / `esptool.py`，下一步需要安装 ESP32-S3 烧录工具。
+- 尝试通过 Scoop 安装 `arduino-cli`、通过 pip 安装 `esptool`，但下载超时，暂未成功。
