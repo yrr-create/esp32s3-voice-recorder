@@ -77,6 +77,43 @@ idf.py
 
 ## 5. 推荐路线
 
+本机已安装：
+
+```text
+ESP-IDF v5.5.4
+安装路径：C:\Espressif\esp-idf-v5.5.4\esp-idf
+工具路径：C:\Espressif\tools
+```
+
+使用 EIM 运行 IDF 命令：
+
+```powershell
+C:\devtools\esp\eim-cli-windows-x64.exe run "idf.py --version" esp-idf-v5.5.4 --esp-idf-json-path C:\Espressif\tools --do-not-track true
+```
+
+编译 hello_world：
+
+```powershell
+cd G:\Personalportfolio\esp32s3-voice-recorder\firmware\hello_world
+C:\devtools\esp\eim-cli-windows-x64.exe run "idf.py set-target esp32s3" esp-idf-v5.5.4 --esp-idf-json-path C:\Espressif\tools --do-not-track true
+C:\devtools\esp\eim-cli-windows-x64.exe run "idf.py build" esp-idf-v5.5.4 --esp-idf-json-path C:\Espressif\tools --do-not-track true
+```
+
+烧录 hello_world：
+
+```powershell
+cd G:\Personalportfolio\esp32s3-voice-recorder\firmware\hello_world
+C:\devtools\esp\eim-cli-windows-x64.exe run "idf.py -p COM13 flash" esp-idf-v5.5.4 --esp-idf-json-path C:\Espressif\tools --do-not-track true
+```
+
+项目里的第一个验证工程：
+
+```text
+firmware/hello_world
+```
+
+当前 `hello_world` 已经编译成功。烧录时如果提示 `COM13` 不存在，先重新插开发板，确认设备管理器里再次出现 `USB-Enhanced-SERIAL CH343 (COM13)`。
+
 ### 路线 A：Arduino IDE，最快点亮和烧录
 
 适合先确认板子能烧录、串口能输出、GPIO 能控制。

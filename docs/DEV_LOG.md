@@ -14,3 +14,8 @@
 - 当前电脑已安装 `esptool`，还未安装 Arduino IDE，也未检测到 `idf.py`。
 - 尝试通过 Scoop 安装 `arduino-cli` 超时，暂未成功。
 - 已通过清华 PyPI 镜像安装 `esptool` 成功。
+- 已通过 EIM 安装 `ESP-IDF v5.5.4` 到 `C:\Espressif\esp-idf-v5.5.4\esp-idf`，工具路径为 `C:\Espressif\tools`。
+- 新增 `firmware/hello_world` 最小验证工程。
+- `idf.py set-target esp32s3` 成功。
+- `idf.py build` 成功，生成 `hello_world.bin`、`bootloader.bin`、`partition-table.bin`。
+- `idf.py -p COM13 flash` 暂未完成：烧录时系统当前未看到 `COM13`，只剩 `COM3`，且 `COM3` 被占用。
