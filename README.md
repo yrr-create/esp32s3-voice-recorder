@@ -27,9 +27,9 @@
 - [BOM](docs/BOM.md)
 - [接线表](docs/WIRING.md)
 - [调试步骤](docs/BRINGUP.md)
+- [识别与烧录](docs/FLASHING.md)
 - [开发日志](docs/DEV_LOG.md)
 
 ## 作品集描述草稿
 
 基于 ESP32-S3 平台预研基础录音存储设备，实现数字麦克风采集、WAV 音频封装、TF 卡文件存储和电脑端文件读取。项目用于学习嵌入式音频采集、文件系统、外设接线和基础产品闭环开发。
-
