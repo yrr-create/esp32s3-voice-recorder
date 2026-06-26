@@ -5,6 +5,7 @@ sdkconfig
 sdkconfig.old
 
 # Editor/system files
+.vs/
 .vscode/
 .idea/
 *.swp
@@ -12,9 +13,11 @@ sdkconfig.old
 Thumbs.db
 Desktop.ini
 
+# Local evidence captures
+picture/
+
 # Audio/debug captures
 *.wav
 *.pcm
 *.bin
 *.log
-
